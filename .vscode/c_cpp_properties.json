@@ -1,0 +1,49 @@
+{
+    "configurations": [
+        {
+            "name": "libopencm3-stm32f4",
+            "includePath": [
+                "${workspaceFolder}/libopencm3/include",
+                "${workspaceFolder}/src/common"
+
+            ],
+            "defines": [
+                "STM32F4",
+                "STM32F407VG6T",
+                "K4"
+            ],
+            "compilerPath": "arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m4",
+                "-mfloat-abi=hard",
+                "-mfpu=fpv4-sp-d16"
+            ]
+        },
+        {
+            "name": "libopencm3-stm32f3",
+            "includePath": [
+                "${workspaceFolder}/libopencm3/include",
+                "${workspaceFolder}/src/common"
+
+            ],
+            "defines": [
+                "STM32F3",
+                "STMF303VC6T",
+                "K4"
+            ],
+            "compilerPath": "arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m4",
+                "-mfloat-abi=hard",
+                "-mfpu=fpv4-sp-d16"
+            ]
+        }
+    ],
+    "version": 4
+}
